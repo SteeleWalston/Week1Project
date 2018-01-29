@@ -14,7 +14,7 @@
             <h1>Get to know yourself!</h1>
             <h2>Survey Qustions</h2>
             <p>What's your name?</p>
-            <p>How are you doing today?</p>
+            <p>Where are you from?</p>
             <p>What's your favorite TV show?</p>
             <p>What was the name of your first pet?</p>
             
@@ -25,18 +25,19 @@
             console.log('I am Javascript');
 
             const name = prompt('Hello! First things first, may I ask your name?');
-            alert('Nice to meet you ' + name + '! My name is Steele.');
+            alert('Nice to meet you ' + name +'! My name is Steele.');
             //console.log('name is a ' + typeof name);
             //console.log('Thier name is: ' + name);
 
-            const hometown = prompt('So,' + name + ' now that we\ve formally introduced ourselves, Where are you from?');
-            alert('Oh cool! I\ve never been to ' + hometown + ' I\m from Colorado, the sunniest sate in the US!');
+            const hometown = prompt('So, ' + name + ' now that we\'ve formally introduced ourselves, Where are you from?');
+            alert('Oh cool! I\'ve never been to ' + hometown + '! I\'m from Conifer, Colorado, the sunniest sate in the US!');
 
-            const tvshow = prompt('Wow, I\ve never met a ' + name + ' from ' + hometown + ' But let\s get a little deeper. What\'s your favorite TV show?');
-            alert('Hmm I\ve never heard of that one. Must be a ' + name + ' from ' + hometown + ' thing, but I\ll take your word that ' + tvshow + ' is good.');
+            const tvshow = prompt('Wow, I\'ve never met a ' + name + ' from ' + hometown + ' But let\'s get a little deeper. What\'s your favorite TV show?');
+            alert('Hmm I\'ve never heard of that one. Must be a ' + name + ' from ' + hometown + ' thing, but I\'ll take your word that ' + tvshow + ' is good.');
 
-            const petname = prompt('I feel like I\m really getting to know you ' + name + '! Especcially now that I know you love ' + tvshow + ' But there\s still one more thing I need to know before I can call you a true friend. What was the name of your first pet?');
-            alert('Woah! ' + petname + ' is such a cool name for a pet. I named my first pet Pinky. He was a Gerbal named after Pinky from Pinky and the Brain, even though Pinky was a mouse');
+            const petname = prompt('I feel like I\'m really getting to know you ' + name + '! Especially now that I know you love ' + tvshow +'. But there\'s still one more thing I need to know before I can call you a true friend. What was the name of your first pet?');
+            alert('Woah! ' + petname + ' is such a cool name for a pet. I named my first pet Pinky. He was a Gerbal named after Pinky from Pinky and the Brain, even though, in the show, Pinky was a mouse');
+            alert('Well, ' + name + ' It was fun talking to you! Maybe I\'ll watch ' + tvshow + ' while talking a trip to ' + hometown + '. Heck! Maybe I\'ll even name my next pet ' + petname + '!');
 
             //const likesFries = confirm('Do you like french fries?');
             //console.log('likesFries is a ' + typeof likesFries);
