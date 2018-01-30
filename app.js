@@ -59,13 +59,17 @@ console.log('I am Javascript');
             }
             console.log('Have I broken a bone?: They answered ' + broken);
 
-            const harryPotter = prompt ('Bonus! You must know me very well if you can respond correctly to this question: You\'re a wizard Harry.').toLowerCase();
+            /*const harryPotter = prompt ('Bonus! You must know me very well if you can respond correctly to this question: You\'re a wizard Harry.').toLowerCase();
             if (harryPotter === 'i\'m a what?') {
                 alert ('A wizard');
             } else {
-                alert('You didn\'t write the correct response');
+                for (var harry = 0; harry === harryPotter; harry + 5) {
+                    alert('Try Again');
+                }
             }
-            console.log('Harry Potter secret test: They answered ' + harryPotter);
+            console.log('Harry Potter secret test: They answered ' + harryPotter);*/
+
+            alert('Thanks for playing along ' + name + '!');
             
             // Previous questions that are Non Yes/No 
 
