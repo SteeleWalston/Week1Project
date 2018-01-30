@@ -2,11 +2,22 @@ console.log('I am Javascript');
 
             // Asking the user their name
             const name = prompt('Hello! First things first, may I ask your name?');
-            alert('Nice to meet you ' + name +'! My name is Steele.');
+            alert('Nice to meet you ' + name +'! My name is Steele. Before we get too far let\'s take a quiz to see how well you know me.');
             console.log('name is a ' + typeof name);
             console.log('Their name is: ' + name);
 
-            // Asking the user where they are from
+            const golf = prompt ('Do I love golf?').toUpperCase();
+            console.log('They said ' + golf);
+            if (golf === 'yes' || 'y') {
+                alert ('Yes! I love golf, even though it is extremely difficult');
+            } else if (golf === 'no', 'n') {
+                alert ('Nope! I\'m super big on golf. I have multiple golf shirts');
+            } else {
+                alert('You didn\'t pick one!');
+            }
+            
+            // Previous questions that are Non Yes/No 
+            /* Asking the user where they are from
             const hometown = prompt('So, ' + name + ' now that we\'ve formally introduced ourselves, Where are you from?');
             alert('Oh cool! I\'ve never been to ' + hometown + '! I\'m from Conifer, Colorado, the sunniest sate in the US!');
             console.log('hometown is a ' + typeof hometown);
@@ -23,4 +34,4 @@ console.log('I am Javascript');
             alert('Woah! ' + petname + ' is such a cool name for a pet. I named my first pet Pinky. He was a Gerbal named after Pinky from Pinky and the Brain, even though in the show, Pinky was a mouse');
             alert('Well, ' + name + ' It was fun talking to you! Maybe I\'ll watch ' + tvshow + ' while talking a trip to ' + hometown + '. Heck! Maybe I\'ll even name my next pet ' + petname + '!');
             console.log('petname is a ' + typeof petname);
-            console.log('They named their first pet: ' + petname);
+            console.log('They named their first pet: ' + petname); */
