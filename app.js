@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html> 
-    <head> 
-        <title>About Me</title>
-    </head>
-    <body>
-
-        <section>
-
-            <h1>Get to know yourself!</h1>
-            <h2>Survey Qustions</h2>
-            <p>What's your name?</p>
-            <p>Where are you from?</p>
-            <p>What's your favorite TV show?</p>
-            <p>What was the name of your first pet?</p>
-            
-        </section>
-
-        <script>
-
-            console.log('I am Javascript');
+console.log('I am Javascript');
 
             // Asking the user their name
             const name = prompt('Hello! First things first, may I ask your name?');
@@ -44,7 +24,3 @@
             alert('Well, ' + name + ' It was fun talking to you! Maybe I\'ll watch ' + tvshow + ' while talking a trip to ' + hometown + '. Heck! Maybe I\'ll even name my next pet ' + petname + '!');
             console.log('petname is a ' + typeof petname);
             console.log('They named their first pet: ' + petname);
-
-        </script>
-    </body>
-</html> 
