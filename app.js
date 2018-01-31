@@ -25,7 +25,7 @@ if (golf === 'yes' || golf === 'y') {
     alert('You didn\'t write a valid answer!');
 }
 console.log('Do I love golf?: They answered ' + golf);
-console.log('Their score is now ' + totalScore.length);
+console.log('Their score is now ' + totalScore);
 
 //Do I like hiking?
 
@@ -41,7 +41,7 @@ if (hike === 'yes' || hike === 'y') {
     totalScore.push('incorrect');
 }
 console.log('Do I like to hike?: They answered ' + hike);
-console.log('Their score is now ' + totalScore.length);
+console.log('Their score is now ' + totalScore);
 
 //Can I eat peanuts?
 
@@ -57,7 +57,7 @@ if (peanuts === 'yes' || peanuts === 'y') {
     totalScore.push('incorrect');
 }
 console.log('Would I eat peanuts?: They answered ' + peanuts);
-console.log('Their score is now ' + totalScore.length);
+console.log('Their score is now ' + totalScore);
 
 //Do I love coding so far?
 
@@ -73,7 +73,7 @@ if (coding === 'yes' || coding === 'y') {
     totalScore.push('incorrect');
 }
 console.log('Do I love writing code?: They answered ' + coding);
-console.log('Their score is now ' + totalScore.length);
+console.log('Their score is now ' + totalScore);
 
 // Have I ever broken a bone?
 
@@ -89,22 +89,25 @@ if (broken === 'yes' || broken === 'y') {
     totalScore.push('incorrect');
 }
 console.log('Have I broken a bone?: They answered ' + broken);
-console.log('Their score is now ' + totalScore);
 
-let movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?');
+let movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?').toLowerCase();
 do {
-    if (movies === 'Harry Potter'){
+    if (movies === 'harry potter' || movies === 'hp'){
         alert('You\'re right! Although, I wouldn\'t be opposed to watching both in the same day');
         totalScore.push('correct');
     }
-    else if (movies === 'Lord of the Rings') {
+    else if (movies === 'lord of the rings' || movies === 'lotr') {
         alert('You\'re wrong! Although, I wouldn\'t be opposed to watching both in the same day');
         totalScore.push('incorrect');
     } else {
         alert('That wasn\'t a vaild response!');
         movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?');
     }
-} while (movies != 'Harry Potter' && movies != 'Lord of the Rings');
+} while (movies != 'harry Potter' && movies != 'lord of the rings' && movies != 'hp' && movies != 'lotr');
+
+console.log('What would I rather watch? HP or LOTR? They answered: ' + movies);
+console.log('Their score is now ' + totalScore);
+//for () {}
 
 
 alert('Thanks for playing along ' + name + '!');
