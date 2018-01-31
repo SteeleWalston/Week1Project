@@ -107,7 +107,34 @@ do {
 
 console.log('What would I rather watch? HP or LOTR? They answered: ' + movies);
 console.log('Their score is now ' + totalScore);
-//for () {}
+
+for (let pokemon = 0; pokemon < 5; pokemon++) {
+    const pokeGuess = parseInt(prompt('How many Pokemon have I caught?'));
+    if (pokeGuess === 0) {
+        alert('Come on! I\'ve caught way more than that!');
+    }
+    else if (pokeGuess < 100) {
+        alert('More than that!');
+    }
+    else if (pokeGuess < 125) {
+        alert('Still more! Keep going!');
+    }
+    else if (pokeGuess < 150) {
+        alert('Still not quite enough. You might say I\'m trying to be the very best');
+    }
+    else if (pokeGuess > 151) {
+        alert('Oops! You\'ve guessed too many!');
+    }
+    else if (pokeGuess === 151) {
+        alert('You\'re right! Of course I had to catch them all!');
+        totalScore.push('correct');
+        break;
+    }
+    console.log('How many Pokemon have I caught? They guessed: ' + pokeGuess);
+}
+
+console.log('Their score is now ' + totalScore);
 
 
 alert('Thanks for playing along ' + name + '!');
+
