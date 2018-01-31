@@ -59,13 +59,17 @@ console.log('I am Javascript');
             }
             console.log('Have I broken a bone?: They answered ' + broken);
 
+            //Attempt at looping two strings
+
             /*const harryPotter = prompt ('Bonus! You must know me very well if you can respond correctly to this question: You\'re a wizard Harry.').toLowerCase();
             if (harryPotter === 'i\'m a what?') {
                 alert ('A wizard');
             } else {
-                for (var harry = 0; harry === harryPotter; harry + 5) {
-                    alert('Try Again');
+                let harry = 0
+                while (harry !== harryPotter) {
+                    harry++;
                 }
+                alert(harry + 'Try again');
             }
             console.log('Harry Potter secret test: They answered ' + harryPotter);*/
 
