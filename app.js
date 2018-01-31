@@ -6,6 +6,8 @@ console.log('I am Javascript');
             console.log('name is a ' + typeof name);
             console.log('Their name is: ' + name);
 
+            // Do I love golf?
+
             const golf = prompt ('Do I love golf?').toLowerCase();
             if (golf === 'yes' || golf === 'y') {
                 alert ('You\'re right! I love golf, even though it is extremely difficult');
@@ -16,6 +18,7 @@ console.log('I am Javascript');
             }
             console.log('Do I love golf?: They answered ' + golf);
 
+            //Do I like hiking?
 
             const hike = prompt ('Am I the kind of person who enjoys a good hike?').toLowerCase();
             if (hike === 'yes' || hike === 'y') {
@@ -27,6 +30,7 @@ console.log('I am Javascript');
             }
             console.log('Do I like to hike?: They answered ' + hike);
 
+            //Can I eat peanuts?
 
             const peanuts = prompt ('Would I eat a peanut butter and jelly sandwich?').toLowerCase();
             if (peanuts === 'yes' || peanuts === 'y') {
@@ -38,6 +42,7 @@ console.log('I am Javascript');
             }
             console.log('Would I eat penuts?: They answered ' + peanuts);
 
+            //Do I love coding so far?
 
             const coding = prompt ('Do I love writing code?').toLowerCase();
             if (coding === 'yes' || coding === 'y') {
@@ -48,6 +53,8 @@ console.log('I am Javascript');
                 alert('You didn\'t wirte an valid answer!');
             }
             console.log('Do I love writing code?: They answered ' + coding);
+
+            // Have I ever broken a bone?
 
             const broken = prompt ('Have I ever broken a bone?').toLowerCase();
             if (broken === 'yes' || broken === 'y') {
@@ -72,6 +79,8 @@ console.log('I am Javascript');
                 alert(harry + 'Try again');
             }
             console.log('Harry Potter secret test: They answered ' + harryPotter);*/
+
+            //A thanks to the person being quized
 
             alert('Thanks for playing along ' + name + '!');
             
