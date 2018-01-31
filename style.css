@@ -1,0 +1,16 @@
+body {
+    background:rgb(197, 197, 197); 
+    font-family: Helvetica;
+}
+
+.headers {
+    color: rgb(98, 126, 121)
+}
+
+.favoriteBooks {
+    color: rgb(143, 32, 32)
+}
+
+h3 ul li {
+    color: rgb(255, 255, 255)
+}
