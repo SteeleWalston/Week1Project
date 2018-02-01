@@ -20,7 +20,6 @@ if (golf === 'yes' || golf === 'y') {
     totalScore.push('correct');
 } else if (golf === 'no' || golf === 'n') {
     alert('Nope! I\'m super big on golf. I even have multiple golf shirts');
-    totalScore.push('incorrect');
 } else {
     alert('You didn\'t write a valid answer!');
 }
@@ -35,10 +34,8 @@ if (hike === 'yes' || hike === 'y') {
     totalScore.push('correct');
 } else if (hike === 'no' || hike === 'n') {
     alert('Wrong! I quite enjoy hiking, especially when the landscape reminds me of Lord of the Rings');
-    totalScore.push('incorrect');
 } else {
     alert('You didn\'t write a valid answer!');
-    totalScore.push('incorrect');
 }
 console.log('Do I like to hike?: They answered ' + hike);
 console.log('Their score is now ' + totalScore);
@@ -48,13 +45,11 @@ console.log('Their score is now ' + totalScore);
 const peanuts = prompt('Would I eat a peanut butter and jelly sandwich?').toLowerCase();
 if (peanuts === 'yes' || peanuts === 'y') {
     alert('You\'re wrong! Why would I do such a thing? I\'m allergic to peanuts remember?!');
-    totalScore.push('incorrect');
 } else if (peanuts === 'no' || peanuts === 'n') {
     alert('Your\'re right! I\'m extremly alleric to peanuts and I might die if I ate such a sandwich');
     totalScore.push('correct');
 } else {
     alert('You didn\'t write a valid answer!');
-    totalScore.push('incorrect');
 }
 console.log('Would I eat peanuts?: They answered ' + peanuts);
 console.log('Their score is now ' + totalScore);
@@ -67,10 +62,8 @@ if (coding === 'yes' || coding === 'y') {
     totalScore.push('correct');
 } else if (coding === 'no' || coding === 'n') {
     alert('Wrong! I\'m having a really good time writing code');
-    totalScore.push('incorrect');
 } else {
     alert('You didn\'t write a valid answer!');
-    totalScore.push('incorrect');
 }
 console.log('Do I love writing code?: They answered ' + coding);
 console.log('Their score is now ' + totalScore);
@@ -80,13 +73,11 @@ console.log('Their score is now ' + totalScore);
 const broken = prompt('Have I ever broken a bone?').toLowerCase();
 if (broken === 'yes' || broken === 'y') {
     alert('You\'re wrong! Well so far. I\'ve had some close calls though');
-    totalScore.push('incorrect');
 } else if (broken === 'no' || broken === 'n') {
     alert('Yep! All bones fully intact!');
     totalScore.push('correct');
 } else {
     alert('You didn\'t wirte a valid answer!');
-    totalScore.push('incorrect');
 }
 console.log('Have I broken a bone?: They answered ' + broken);
 console.log('Their score is now ' + totalScore);
@@ -101,7 +92,6 @@ do {
     }
     else if (movies === 'lord of the rings' || movies === 'lotr') {
         alert('You\'re wrong! Although, I wouldn\'t be opposed to watching both in the same day');
-        totalScore.push('incorrect');
     } else {
         alert('That wasn\'t a vaild response!');
         movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?');
@@ -163,5 +153,5 @@ for (let artGuess = 0; artGuess < 6; artGuess++){
 console.log('Their score is now ' + totalScore);
 
 
-alert('Thanks for playing along ' + name + '!');
+alert('Thanks for playing along ' + name + '! You guessed ' + totalScore.length + ' out of 8 questions right');
 
