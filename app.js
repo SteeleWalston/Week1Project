@@ -3,8 +3,6 @@
 
 const totalScore = [];
 
-// Array for Yes/No questions
-
 // Asking the user their name
 
 const name = prompt('Hello! First things first, may I ask your name?');
