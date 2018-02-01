@@ -89,8 +89,11 @@ if (broken === 'yes' || broken === 'y') {
     totalScore.push('incorrect');
 }
 console.log('Have I broken a bone?: They answered ' + broken);
+console.log('Their score is now ' + totalScore);
 
-let movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?').toLowerCase();
+//Favorite movie
+
+let movies = prompt('What would I rather watch, Harry Potter? Or Lord of the Rings?').toLowerCase();
 do {
     if (movies === 'harry potter' || movies === 'hp'){
         alert('You\'re right! Although, I wouldn\'t be opposed to watching both in the same day');
@@ -108,6 +111,8 @@ do {
 console.log('What would I rather watch? HP or LOTR? They answered: ' + movies);
 console.log('Their score is now ' + totalScore);
 
+//How many pokemon?
+
 for (let pokemon = 0; pokemon < 5; pokemon++) {
     const pokeGuess = parseInt(prompt('How many Pokemon have I caught?'));
     if (pokeGuess === 0) {
@@ -115,9 +120,6 @@ for (let pokemon = 0; pokemon < 5; pokemon++) {
     }
     else if (pokeGuess < 100) {
         alert('More than that!');
-    }
-    else if (pokeGuess < 125) {
-        alert('Still more! Keep going!');
     }
     else if (pokeGuess < 150) {
         alert('Still not quite enough. You might say I\'m trying to be the very best');
@@ -131,6 +133,31 @@ for (let pokemon = 0; pokemon < 5; pokemon++) {
         break;
     }
     console.log('How many Pokemon have I caught? They guessed: ' + pokeGuess);
+}
+
+console.log('Their score is now ' + totalScore);
+
+//Favorite Artist?
+
+for (let artGuess = 0; artGuess < 6; artGuess++){
+    const topArtists = ['van gogh', 'warhol', 'banksy'];
+    const artists = prompt('Who is one of my favorite artists?').toLowerCase();
+    if (artists === topArtists[0]){
+        alert('You\'re right! The other answeres were: ' + topArtists[1] + ' and ' + topArtists[2]);
+        totalScore.push('correct');
+        break;
+    } else if (artists === topArtists[1]) {
+        alert('You\'re right! The other answeres were: ' + topArtists[0] + ' and ' + topArtists[2]);
+        totalScore.push('correct');
+        break;
+    } else if (artists === topArtists[2]) {
+        alert('You\'re right! The other answeres were: ' + topArtists[0] + ' and ' + topArtists[1]);
+        totalScore.push('correct');
+        break;
+    } else {
+        alert('You\'re Wrong!');
+    }
+    console.log('They guessed:' + artists);
 }
 
 console.log('Their score is now ' + totalScore);
