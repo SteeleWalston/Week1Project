@@ -34,7 +34,7 @@ function loveGolf () {
 
 //Do I like hiking?
 
-function hiking () {
+function loveHiking () {
     const hike = prompt('Am I the kind of person who enjoys a good hike?').toLowerCase();
     if (hike === 'yes' || hike === 'y') {
         alert('You\'re right! My favorite hike so far this year has been Labyrnth Falls');
@@ -49,12 +49,12 @@ function hiking () {
 
 //Can I eat peanuts?
 
-function eatPeanuts () {
+function canEatPeanuts () {
     const peanuts = prompt('Would I eat a peanut butter and jelly sandwich?').toLowerCase();
     if (peanuts === 'yes' || peanuts === 'y') {
         alert('You\'re wrong! Why would I do such a thing? I\'m allergic to peanuts remember?!');
     } else if (peanuts === 'no' || peanuts === 'n') {
-        alert('Your\'re right! I\'m extremly alleric to peanuts and I might die if I ate such a sandwich');
+        alert('Your\'re right! I\'m extremly allergic to peanuts and I might die if I ate such a sandwich');
         totalScore.push('correct');
     } else {
         alert('You didn\'t write a valid answer!');
@@ -79,7 +79,7 @@ function likesToCode () {
 
 // Have I ever broken a bone?
 
-function boneBreaker () {
+function guessBrokeBones () {
     const broken = prompt('Have I ever broken a bone?').toLowerCase();
     if (broken === 'yes' || broken === 'y') {
         alert('You\'re wrong! Well so far. I\'ve had some close calls though');
@@ -94,27 +94,28 @@ function boneBreaker () {
 
 //Favorite movie
 
-function flicks () {
-    let movies = prompt('What would I rather watch, Harry Potter? Or Lord of the Rings?').toLowerCase();
-    do {
-        if (movies === 'harry potter' || movies === 'hp'){
+function guessFavFlicks () {
+    for (let movieGuess = 0; movieGuess < 5; movieGuess++) {
+        const favMovies = ['harry potter', 'hp',];
+        const notSoFavMovies = ['lord of the rings', 'lotr'];
+        const movies = prompt('What would I rather watch, Harry Potter? Or Lord of the Rings?').toLowerCase();
+        if (favMovies.includes(movies)) {
             alert('You\'re right! Although, I wouldn\'t be opposed to watching both in the same day');
             totalScore.push('correct');
-        }
-        else if (movies === 'lord of the rings' || movies === 'lotr') {
+            break;
+        } else if (notSoFavMovies.includes(movies)) {
             alert('You\'re wrong! Although, I wouldn\'t be opposed to watching both in the same day');
+            break;
         } else {
-            alert('That wasn\'t a vaild response!');
-            movies = prompt('Which movie would I rather watch? Harry Potter? Or Lord of the Rings?');
+            alert('You didn\'t wirte a valid answer!');
         }
-    } while (movies != 'harry Potter' && movies != 'lord of the rings' && movies != 'hp' && movies != 'lotr');
-
-    console.log('What would I rather watch? HP or LOTR? They answered: ' + movies);
+        console.log('They guessed ' + movies);
+    }
 }
 
 //How many pokemon?
 
-function pikachu (){
+function guessPokemonCaught (){
     for (let pokemon = 0; pokemon < 5; pokemon++) {
         const pokeGuess = parseInt(prompt('How many Pokemon have I caught?'));
         if (pokeGuess === 0) {
@@ -139,20 +140,12 @@ function pikachu (){
 }
 //Favorite Artist?
 
-function artist () {
+function guessFavArtist () {
     for (let artGuess = 0; artGuess < 6; artGuess++){
         const topArtists = ['van gogh', 'warhol', 'banksy'];
         const artists = prompt('Who is one of my favorite artists?').toLowerCase();
-        if (artists === topArtists[0]){
-            alert('You\'re right! The other answeres were: ' + topArtists[1] + ' and ' + topArtists[2]);
-            totalScore.push('correct');
-            break;
-        } else if (artists === topArtists[1]) {
-            alert('You\'re right! The other answeres were: ' + topArtists[0] + ' and ' + topArtists[2]);
-            totalScore.push('correct');
-            break;
-        } else if (artists === topArtists[2]) {
-            alert('You\'re right! The other answeres were: ' + topArtists[0] + ' and ' + topArtists[1]);
+        if (topArtists.includes(artists)) {
+            alert('You\'re right! My top three favorite artists are ' + topArtists[0] + ', ' + topArtists[1] + ', and ' + topArtists[2] + '.');
             totalScore.push('correct');
             break;
         } else {
@@ -164,12 +157,12 @@ function artist () {
 }
 
 loveGolf();
-hiking();
-eatPeanuts();
+loveHiking();
+canEatPeanuts();
 likesToCode();
-boneBreaker();
-flicks();
-pikachu();
-artist();
+guessBrokeBones();
+guessFavFlicks();
+guessPokemonCaught();
+guessFavArtist();
 
 alert('Thanks for playing along ' + name + '! You guessed ' + totalScore.length + ' out of 8 questions right');
