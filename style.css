@@ -1,28 +1,74 @@
+
 body {
-    background:rgb(197, 197, 197); 
-    font-family: Helvetica;
+    min-width: 1000px;
+    padding: 0;
+    background:rgb(255, 255, 255); 
+    font-family: Helvetica
 }
 
-.headers {
-    background: rgb(255, 255, 255);
-    color: rgb(98, 126, 121);
-    margin: 0 auto
-
+#main-header {
+    font-family: "Lobster", cursive; 
+    font-size: 100px;
+    color: rgb(114, 160, 148);
+    margin: 10px, 10px
 }
 
-.favoriteBooks {
-    color: rgb(143, 32, 32)
+h1 {
+    text-align: center;
+    margin: 0 auto;
 }
 
-#firstList li {
-    color: rgb(0, 0, 0)
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
 }
 
 nav li {
-    list-style: none;
-    display: inline;
-    padding: 10px 10px;
-    margin: 10px 10px; 
-    background: rgb(255, 255, 255);
-    color: rgb(98, 126, 121)
+    list-style: none
+}
+
+Main aside {
+    width: 175px;
+    min-height: 300px;
+    position: sticky
+
+}
+
+main section {
+    display: inline-block;
+    padding: 10px
+}
+
+main p {
+    text-align: center;
+    width: 900px;
+    padding: 50px;
+    font-size: 24px;
+    background: rgba(115, 161, 149, 0.288);
+    border-radius: 5px;
+    margin: 10px auto 10px
+}
+
+#bio-list {
+    width: 1000px;
+    background: rgba(115, 161, 149, 0.288);
+    border-radius: 5px
+}
+
+#education {
+    margin: 10px auto 10px 180px;
+    background: rgba(115, 161, 149, 0.288);
+    border-radius: 5px
+}
+
+#work {
+    margin: 20px auto 10px auto;
+    background: rgba(115, 161, 149, 0.288);
+    width: 600px;
+    border-radius: 5px
 }
